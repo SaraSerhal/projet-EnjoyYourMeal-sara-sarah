@@ -1,0 +1,15 @@
+<div class="profil">
+  <div class="profil-container">
+    <div *ngIf="user; else notLoggedIn">
+      <h1>Profil de {{ user.name }} {{ user.surname }}</h1>
+      <p><strong>Email :</strong> {{ user.email }}</p>
+      <p><strong>Téléphone :</strong> {{ user.phoneNumber }}</p>
+      <button (click)="userService.logout()">Déconnexion</button>
+      <button (click)="deleteAccount()" class="delete-btn">Supprimer mon compte</button>
+    </div>
+
+  </div>
+</div>
+<ng-template #notLoggedIn>
+  <p>Veuillez vous connecter</p>
+</ng-template>

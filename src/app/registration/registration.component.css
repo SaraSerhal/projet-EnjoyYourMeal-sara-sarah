@@ -1,0 +1,87 @@
+
+.inscription-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.form-register {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.form-register h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.group label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s ease-in-out;
+}
+
+.group input:focus {
+  border-color: #00cc66;
+  outline: none;
+}
+
+.group small {
+  color: red;
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 5px;
+}
+
+.group button {
+  width: 100%;
+  background-color: #00cc66;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.group button:hover {
+  background-color: #00994d;
+}
+
+.group button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+  margin-top: 15px;
+}

@@ -1,0 +1,55 @@
+.profil{
+  min-height: 100vH;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.profil-container {
+  max-width: 600px;
+  margin: 260px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.profil h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.profil p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.profil button {
+  background-color: #00cc66;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin: 10px;
+}
+
+.profil button:hover {
+  background-color: #00994d;
+}
+
+.delete-btn {
+  background-color: #cc0000 !important;
+}
+
+.delete-btn:hover {
+  background-color: #a00000 !important;
+}
+
+.not-logged-in {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #666;
+  margin-top: 50px;
+}

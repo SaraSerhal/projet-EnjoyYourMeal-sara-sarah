@@ -1,0 +1,46 @@
+<div class="hero">
+  <img src="assets/hero-image.webp" alt="Grande image d'accueil" class="hero-image">
+  <div class="hero-text">
+    <h1>Vos restos locaux livrés chez vous</h1>
+    <p>Commandez vos plats préférés en quelques clics et faites-vous livrer rapidement.</p>
+    <a routerLink="/restaurants" class="btn btn-primary">Explorer</a>
+  </div>
+</div>
+
+<section class="featured-restaurants">
+  <h2>Nos restaurants populaires</h2>
+  <div class="restaurant-list">
+    <div class="restaurant-card" *ngFor="let restaurant of restaurants">
+      <img [src]="restaurant.image" [alt]="restaurant.name">
+      <h3>{{ restaurant.name }}</h3>
+      <p>{{ restaurant.description }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="how-it-works">
+  <h2>Comment ça marche ?</h2>
+  <div class="steps">
+    <div class="step">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="60" height="60">
+        <path fill="#00cc66" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+      </svg>
+      <h3>Recherchez</h3>
+      <p>Trouvez votre restaurant préféré.</p>
+    </div>
+    <div class="step">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="60" height="60">
+        <path fill="#00cc66" d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+      </svg>
+      <h3>Commandez</h3>
+      <p>Choisissez votre repas et passez commande.</p>
+    </div>
+    <div class="step">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="60" height="60">
+        <path fill="#00cc66" d="M112 0C85.5 0 64 21.5 64 48l0 48L16 96c-8.8 0-16 7.2-16 16s7.2 16 16 16l48 0 208 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L64 160l-16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l16 0 176 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L64 224l-48 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l48 0 144 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L64 288l0 128c0 53 43 96 96 96s96-43 96-96l128 0c0 53 43 96 96 96s96-43 96-96l32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64 0-32 0-18.7c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7L416 96l0-48c0-26.5-21.5-48-48-48L112 0zM544 237.3l0 18.7-128 0 0-96 50.7 0L544 237.3zM160 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm272 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0z"/>
+      </svg>
+      <h3>Faites-vous livrer</h3>
+      <p>Recevez votre commande rapidement.</p>
+    </div>
+  </div>
+</section>
